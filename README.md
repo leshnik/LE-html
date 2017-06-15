@@ -1,2 +1,3 @@
 # LE-html
-just a tutorial site for the Learn Enough Html book
+This is just a tutorial site for the Learn Enough Html book, a place for a beginner to practice.
+
