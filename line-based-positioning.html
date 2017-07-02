@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Line-based Positioning</title>
+    <meta charset="utf-8">
+    <style>
+	body {
+		margin: 80px;
+	}
+	.wrapper {
+		display: grid;
+		grid-template-columns: auto 10px 23vh 10px 23vh;
+		grid-template-rows: auto 10px auto 20px auto;
+		background-color: #fff;
+		color: #444;
+	}
+	.box {
+		background-color: grey;
+		border: 15px solid rgb(88,55,112);
+		color: #fff;
+		border-radius: 50px;
+		padding: 10px;
+		font: 150%/1.3 Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
+	}
+	.a {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+	.b {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+	.c {
+		grid-column-start: 5;
+		grid-column-end: 6;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+	.d {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 5;
+		grid-row-end: 6;
+	}
+	.e {
+		grid-column-start: 3;
+		grid-column-end: 6;
+		grid-row-start: 3;
+		grid-row-end: 4;
+	}
+	.f {
+		grid-column-start: 5;
+		grid-column-end: 6;
+		grid-row-start: 5;
+		grid-row-end: 6;
+    background-color: #2f8;
+	}
+   </style>
+</head>
+
+ <body>
+
+	 <div class="wrapper">
+		<div class="box a">Ant eaters eat ants.<br>
+     <img src="images/ça-n'arrive-pas-souvent.png"; alt="ça n'arrive pas souvent"; height=300px;>
+    </div>
+		<div class="box b">
+      Bees make hives and honey.
+      <p>Bears eat honey and bees.</p>
+      <p>Babies wet diapers and swallow down baby pins.</p>
+    </div>
+		<div class="box c">Cats are cool if they're cats.</div>
+		<div class="box d">Dogs have:
+      <ol>
+        <li>dog ears</li>
+        <li>four paws</li>
+      </ol>
+
+
+    </div>
+		<div class="box e">Eels tend to stretch out more than certain other species.</div>
+		<div class="box f">Frog legs for dinner! If you have enough space for them.</div>
+	</div>
+</body>
+</html>
