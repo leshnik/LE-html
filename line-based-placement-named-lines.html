@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bristol Royal Mail example</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="layout-styles.css" type="text/css" />
+	  <style>
+      /* test comment */
+      .mainheader { grid-area: header;}
+      .content { grid-area: content;}
+      .sidebar { grid-area: sidebar;}
+      .mainfooter { grid-area: footer;}
+      
+      .wrapper {
+        display: grid;
+        width: 90%;
+        margin: 0 auto 0 auto;
+        
+        grid-template-columns: 9fr 40px 3fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header header header"
+        "content . sidebar"
+        "footer footer footer"
+        ;
+      }
+    /* article grid setup */
+      .content .primary { grid-area: article-primary; }
+      .content aside { grid-area: article-secondary;}
+      .content > h1 {grid-area: chapterhead ;}
+      .content {
+        display: grid;
+        grid-template-columns: 9fr 40px 3fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+          "chapterhead . ."
+          "article-primary . article-secondary"
+          ;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="mainheader">
+        <h1>Excerpts from the book <em>The Bristol Royal Mail</em></h1>
+      </header>
+      <article class="content">
+        <h1>Post letter boxes: position, violation, peculiar uses</h1>
+        <div class="primary">
+          <p>A whole slew of text can go here eventually. There needs to be quite a bit to give an idea of how this is supposed to work in real life. An ideal place to put that latin paragraph, "Lorem...".</p>
+        </div>
+        <aside>
+          <p>The three hundred and fifty pillar and wall letter boxes are placed at convenient points, regard being had to the wants of the immediate neighbourhood that each has to serve—to approach by paved crossings, to contiguity to a public lamp, to being out of the way of pedestrians and as far removed from mud-splashing as possible. At the same time, the inspectors endeavour to place the boxes so that they may be an attraction, rather than an eyesore, to the spot where erected.</p>
+          
+        </aside>
+      </article>
+      <aside class="sidebar">
+        <figure>
+          <img src="images/postmaster.jpg" alt="photo of the postmaster">
+          <figcaption>The Postmaster</figcaption>
+        </figure>
+        
+      </aside>
+      <footer class="mainfooter">
+        <p>This is my main footer text.</p>
+      </footer>
+    </div>
+
+  </body>
+</html>
