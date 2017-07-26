@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Line-based Positioning</title>
+    <meta charset="utf-8">
+    <style>
+	body {
+		margin: 40px;
+	}
+	.wrapper {
+		display: grid;
+		grid-template-columns: 100px 10px 100px 10px 100px;
+		grid-template-rows: 150px 15px 100px;
+		background-color: #fff;
+		color: #444;
+	}
+	.box {
+		background-color: rgba(96, 215, 207, 0.27);
+		border: 1px solid rgb(88,55,112);
+		color: #111;
+		border-radius: 20px;
+		padding: 20px;
+		font: 150%/1.3 Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
+	}
+	.a {
+		grid-column: 1 / 4;
+		grid-row: 1 / 2;
+    font: 75%/1.3 Lucida Grande;
+    overflow: auto;
+	}
+	.b {
+		grid-column: 5 / 6;
+		grid-row: 1 / 4;
+    font: 60%/1.3 Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
+	}
+	.c {
+		grid-column: 1 / 2;
+		grid-row: 3 / 4;
+	}
+	.d {
+		grid-column: 3 / 4;
+		grid-row: 3 / 4;
+	}
+   </style>
+</head>
+
+ <body>
+
+	 <div class="wrapper">
+		<div class="box a">A
+      <p>In my A box, I want to put enough text so that I can see how vertical extension works when rows are set to <em>auto</em> or set to scroll with the <strong>overflow: scroll</strong> property. After seeing that <em>scroll</em> makes scroll bars in both directions even when only one direction is needed, I tried the <em>auto</em> property instead of scroll.</p>
+      <p> There must be several paragraphs.</p>
+      <p> The rows are set to 'auto' in "grid-template-rows: auto 10px auto"</p>
+      <p>The a box has a font setting which overides the class setting for box which is above it in the cascade order. It is set to 75%/1.3. I don't know what this means exactly.</p>
+    </div>
+		<div class="box b">B
+      <ul>
+        <li>Future link 1.</li>
+        <li>Future link 2.</li>
+        <li>Future link 3.</li>
+      </ul>
+      Some text has wandered into this area underneath the links.
+
+
+    </div>
+		<div class="box c">C</div>
+		<div class="box d">D</div>
+	</div>
+</body>
+</html>
