@@ -37,7 +37,6 @@ a{
   vertical-align: middle;
   width: 2.5em;
 }
-
 .social-list > li {
   display: inline-block;
   margin: 0 0.5em;
@@ -94,12 +93,4 @@ color: #fff;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
-}
-.header-nav a:hover,
-.hearder-nav a:active {
-  color:#ed6e2f;
-}
-.header-logo:hover,
-.header-logo:active {
-  opacity: 0.5;
 }
