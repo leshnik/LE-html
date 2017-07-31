@@ -16,6 +16,12 @@ color: #f00;
 .header-nav > li {
   display: inline-block;
 }
+.header-nav > li:first-child a {
+  color: #ed6e2f;
+}
+.header-nav > li:first-child a:hover {
+  color: #000;
+}
 .header-nav a {
   color: #000;
   font-size: 0.8rem;
@@ -23,11 +29,20 @@ color: #f00;
   text-decoration: none;
   text-transform: uppercase;
 }
+.header-nav a:hover, .header-nav a:active {
+  color: #ed6e2f;
+}
+.header-logo:hover, .header-logo:active {
+  opacity: 0.5;
+}
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
   height: 50vh;
 }
+/*.full-hero:hover {
+  background-color: #ccc;
+} */
 /* SOCIAL STYLES */
 .social-list {
   list-style: none;
@@ -54,6 +69,9 @@ color: #f00;
 .social-list > li {
   display: inline-block;
   margin: 0 0.5em;
+}
+.social-link:hover, .social-link:active {
+  color: #ed6e2f;
 }
 /* BIO STYLES */
 .bio-wrapper {
