@@ -55,10 +55,6 @@ html {
 }
 .header-nav a {
   color: #fff;
-  font-size: 0.8rem;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 .header-nav a:hover, .header-nav a:active {
   color: #ed6e2f;
@@ -81,6 +77,16 @@ html {
   background-color: #ed6e2f;
   
 }
+/* NAV STYLES */
+.nav-links a {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav-links a:hover, .nav-links a:active {
+  color: #ed6e2f;
+}
 /* FOOTER STYLES */
 .footer {
   background-color: #000;
@@ -97,6 +103,13 @@ html {
 }
 .footer h3 span {
   color: #aaa;
+}
+.footer-nav li {
+  display: inline-block;
+  margin: 2em 1em 0;
+}
+.footer-nav a {
+  color: #ccc;
 }
 
 /* HERO STYLES */
