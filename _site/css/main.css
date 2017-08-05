@@ -1,12 +1,16 @@
 /* GLOBAL STYLES */
+html {
+  box-shadow: 0 0 0 30px #000 inset;
+  padding: 0 30px;
+}
 body {
-  font-family: helvetica; arial; sans;
+  font-family: helvetica; arial, sans;
 }
 h1 {
   font-size: 7vw;
   margin-top: 0;
 }
-a{
+a {
 color: #f00;
 }
 h2 ~ p {
@@ -16,10 +20,6 @@ h2 ~ p {
   max-width: 70%;
   text-align: center;
 }
-html {
-  box-shadow: 0 0 0 30px #000 inset;
-  padding: 0 30px;
-}
 /* HEADER STYLES */
 .header {
   background-color: #000;
@@ -27,6 +27,24 @@ html {
   position: fixed;
   width: 100%;
   z-index: 20;
+}
+.header-logo {
+  background-color: #000;
+  box-sizing: border-box;
+  display: block;
+  height: 10vh;
+  left: -30px;
+  padding-top: 10px;
+  position: relative;
+  text-align: center;
+  width: 10vh;
+}
+.header-logo img {
+  height: 80%;
+}
+.header-logo:hover, .header-logo:active {
+  background-color: #ed6e2f;
+  
 }
 .header-nav {
   float: right;
@@ -59,24 +77,7 @@ html {
 .header-nav a:hover, .header-nav a:active {
   color: #ed6e2f;
 }
-.header-logo {
-  background-color: #000;
-  box-sizing: border-box;
-  display: block;
-  height: 10vh;
-  left: -30px;
-  padding-top: 10px;
-  position: relative;
-  text-align: center;
-  width: 10vh;
-}
-.header-logo img {
-  height: 80%;
-}
-.header-logo:hover, .header-logo:active {
-  background-color: #ed6e2f;
-  
-}
+
 /* NAV STYLES */
 .nav-links a {
   font-size: 0.8rem;
