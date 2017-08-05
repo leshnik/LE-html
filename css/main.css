@@ -91,11 +91,12 @@ h2 ~ p {
 /* FOOTER STYLES */
 .footer {
   background-color: #000;
-  padding: 10vh 0 15vh;
+  padding: 10vh 0 15vh 0;
   text-align: center;
+  width: 100%;
 }
 .footer-logo img {
-  width: 50px;
+  width: 60px;
 }
 .footer h3 {
   color: #fff;
