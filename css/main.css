@@ -94,6 +94,7 @@ h2 ~ p {
   padding: 10vh 0 15vh 0;
   text-align: center;
   width: 100%;
+  position: relative
 }
 .footer-logo img {
   width: 60px;
