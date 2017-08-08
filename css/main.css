@@ -1,5 +1,5 @@
 /* GLOBAL STYLES */
-html {
+html { 
   box-shadow: 0 0 0 30px #000 inset;
   padding: 0 30px;
 }
@@ -118,6 +118,8 @@ h2 ~ p {
 .full-hero {
   background-color: #c7dbfc;
   height: 40vh;
+  position: relative;
+  padding-bottom: 40px;
 }
 /*.full-hero:hover {
   background-color: #ccc;
