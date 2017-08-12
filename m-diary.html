@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: bare
 title: morton's music diary
 ---
   <h2>morton's music diary</h2>
@@ -19,7 +19,7 @@ title: morton's music diary
     
     </ul>
   </p>
-  <h3>Vocabulary for musical algorithms</h3>
+  <h2>Vocabulary for musical algorithms</h2>
   <p>I have used the word <em>expand</em> to indicate that the two notes of an interval should move outward and the make the interval larger. There are several possibilites and there should be a practical, readable, description for each of them.</p>
   <p>Either one of the notes can remain stationary while the other one moves; both notes can go the same distance, or different distances, and the distance has to be specified in some way. I have taken a shot at this in the first algorithm, above, by using the letter 'h', meaning half-step, and two numbers; as well as using 'down' and 'up'. Counting half-steps is certainly a possible alternative to named intervals like minor 2nd or perfect 4th; but there must be a shorter way of indicating how far and in what direction to move each note.</p>
   <p>Since an interval always has just two notes, one could indicate the movement with any pair of numbers and a space or some other separator between them. Using minus and plus signs, the '-' and the '+', with the numbers, would indicate not only how many half steps to move, but also in what direction, eliminating the need to use 'expand', 'shrink', and 'move'. The minus sign would mean to go down and the plus sign would mean to go up. If the first number is a plus, and the second a minus, then the interval will shrink. If there is just one number, both notes go that distance and direction. If one of the numbers is '0', then one note remains stationary while the other one moves. All that remains is to specify that the first number references the lower note and the second the higher; and that it is semitones which are being counted.</p>
