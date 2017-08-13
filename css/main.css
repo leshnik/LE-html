@@ -121,9 +121,15 @@ h2 ~ p {
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
-  height: 40vh;
+  background: contain;
+  box-sizing: border-box;
+  height: 100vh;
   position: relative;
-  padding-bottom: 40px;
+  padding-top: 10vh;
+}
+.hero-home {
+  background-image: url(/images/shark.jpg);
+  background-position: center top;
 }
 /*.full-hero:hover {
   background-color: #ccc;
