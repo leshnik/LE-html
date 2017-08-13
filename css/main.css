@@ -126,6 +126,15 @@ h2 ~ p {
   height: 100vh;
   padding-top: 10vh;
 }
+.full-hero:after {
+  bottom: 2vh;
+  color: #fff;
+  content: "﹀";
+  font-size: 36px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+}
 .hero-home {
   background-image: url(/images/shark.jpg);
   background-position: center top;
@@ -143,6 +152,7 @@ h2 ~ p {
   font-size: 7vw;
   margin-bottom: 0.25em;
 }
+
 .hero-content .social-link {
   background-color: rgba(255, 255, 255, 0.5);
   color: #557c83;
@@ -168,7 +178,7 @@ h2 ~ p {
   color: #fff;
   display: inline-block;
   font-family: helvetica, arial, sans;
-  font-size: .5rem;
+  font-size: .9rem;
   font-weight: bold;
   height: 2.5em;
   line-height: 1;
