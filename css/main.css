@@ -151,7 +151,7 @@ h2 ~ p {
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
-  background: contain;
+  background: cover;
   box-sizing: border-box;
   height: 100vh;
   padding-top: 10vh;
@@ -168,7 +168,6 @@ h2 ~ p {
 .hero-home {
   background-image: url(/images/shark.jpg);
   background-position: center top;
-  background-size: contain;
 }
 .hero-content {
   color: #fff;
